@@ -1,5 +1,6 @@
 {
   "title": "PokeDex",
   "description": "Discover detailed information about Pokémon, including types and stats.",
-  "technologies": ["HTML", "CSS", "JavaScript"]
+  "technologies": ["HTML", "CSS", "JavaScript"],
+  "github": "https://github.com/kayawebd/pokedex"
 }
