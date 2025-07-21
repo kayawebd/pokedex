@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="./scripts/script.js"></script>
+    <!-- <link rel="icon" href="./images/" type="image/x-icon"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <a href="./index.php" class="site-heading">
+        <h1>PokeDex</h1>
+    </a>
+    <div class="pokemon-details siteWrapper">
+        <div class="img-details-box">
+            <div class="img-container">
+                <img id="pokemon-image" src="./ " alt="Pokemon Image" />
+            </div>
+            <div class="column">
+                <h2 id="pokemon-name"></h2>
+                <p id="pokemon-description"></p>
+                <table class="pokemon-table">
+                    <tbody>
+                        <tr>
+                            <th>№</th>
+                            <td>
+                                <span id="pokemon-number"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Type</th>
+                            <td>
+                                <p id="pokemon-type"><span></span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Species</th>
+                            <td>
+                                <p id="pokemon-species"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Height</th>
+                            <td>
+                                <p id="pokemon-height"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Weight</th>
+                            <td>
+                                <p id="pokemon-weight"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Abilities</th>
+                            <td>
+                                <p id="pokemon-abilities"></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Breeding</h3>
+                <table class="pokemon-table">
+                    <tbody>
+                        <tr>
+                            <th>Egg Group</th>
+                            <td>
+                                <p id="pokemon-egg"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Gender</th>
+                            <td>
+                                <p id="pokemon-gender"></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div id="pokemon-base-stats" class="pokemon-info-section">
+                <h3>Base Stats:</h3>
+                <table>
+                    <tr>
+                        <th>HP</th>
+                        <td><span id="pokemon-hp"></span></td>
+                        <td class="cell-barchart">
+                            <div style="width:25.00%;" class="barchart-bar barchart-rank-2 "></div>
+                        </td>
+                        <!-- TODO: UPDATE THIS NUMBER BASED ON THE HIGHEST NUM IN DATABASE -->
+                        <td class="cell-num">255</td>
+                    </tr>
+                    <tr>
+                        <th>Attack</th>
+                        <td><span id="pokemon-attack"></span></td>
+                        <td class="cell-barchart">
+                            <div style="width:20%;" class="barchart-bar barchart-rank-2 "></div>
+                        </td>
+                        <td class="cell-num">181</td>
+                    </tr>
+                    <tr>
+                        <th>Defense</th>
+                        <td><span id="pokemon-defense"></span></td>
+                        <td class="cell-barchart">
+                            <div style="width:80.00%;" class="barchart-bar barchart-rank-2 "></div>
+                        </td>
+                        <td class="cell-num">230</td>
+                    </tr>
+                    <tr>
+                        <th>Sp. Attack</th>
+                        <td><span id="pokemon-sp-attack"></span></td>
+                        <td class="cell-barchart">
+                            <div style="width:50.00%;" class="barchart-bar barchart-rank-2 "></div>
+                        </td>
+                        <td class="cell-num">49</td>
+                    </tr>
+                    <tr>
+                        <th>Sp. Defense</th>
+                        <td><span id="pokemon-sp-defense"></span></td>
+                        <td class="cell-barchart">
+                            <div style="width:30.00%;" class="barchart-bar barchart-rank-2 "></div>
+                        </td>
+                        <td class="cell-num">49</td>
+                    </tr>
+                    <tr>
+                        <th>Speed</th>
+                        <td><span id="pokemon-speed"></span></td>
+                        <td class="cell-barchart">
+                            <div style="width:50.00%;" class="barchart-bar barchart-rank-2 "></div>
+                        </td>
+                        <td class="cell-num">160</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <td class="cell-num cell-total">318</td>
+                        <th class="cell-barchart"></th>
+                        <th>Max</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
